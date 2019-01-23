@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Сергей Васильев](https://up.htmlacademy.ru/htmlcss/24/user/810857).
-* Наставник: [Ирина Малиновская].
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
