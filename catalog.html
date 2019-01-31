@@ -7,8 +7,8 @@
 
   <body>
     <header class="main-header">
-      <div class="main-header-section-top">
-        <div class="main-nav-container-top">
+      <div class="main-header-top">
+        <div class="container">
           <div class="main-nav">
             <ul class="main-nav-button">
               <li><a class="button" href="index.html">Техномарт</a></li>
@@ -22,10 +22,9 @@
           </div>
         </div>
       </div>
-      <!--Середина-->
-      <div class="main-header-section-middle">
+      <div class="main-header-middle">
         <div class="container">
-          <div>
+          <div class="container-text">
           <p>Интернет-магазин строительных материалов  и инструментов для ремонта</p>
           </div>
           <div>
@@ -54,7 +53,7 @@
     </header>
 
     <main>
-        <sectiion class="breadcrumbs">
+        <div class="breadcrumbs">
           <div class="container">
            <ul>
              <li><a href="index.html"></a><img src="img/homepage.svg"  alt="Главная страница"></li>
@@ -63,37 +62,37 @@
              <li><a href="perforators.html"></a>Перфораторы</li>
            </ul>
           </div>
-        </section>
+        </div>
         <div class="page-head">
           <div class="container">
             <h1>Перфораторы</h1>
           </div>
         </div>
         <div class="container-filters">
-        <div class="filters-left-column">
-          <section class="filters">
-            <p>Фильтр<span>Форма</span></p>
-            <p>Цена<span>Форма</span></p>
-          </section>
-          <section class="filters-manufacturers">
-            <p>Производители</p>
-            <ul>
-              <li class="Bosch">Bosch</li>
-              <li>Интерскол</li>
-              <li class="Makita">Makita</li>
-              <li>Dewalt</li>
-              <li>Hitachi</li>
-            </ul>
-          </section>
-          <section class="filters-charge">
-            <p>Питание</p>
-            <ul>
-              <li>Аккумуляторные</li>
-              <li>Сетевые</li>
-            </ul>
-            <a class="button" href="#">Показать</a>
-          </section>
-        </div>
+          <div class="filters-left-column">
+            <div class="filters">
+              <p>Фильтр<span>Форма</span></p>
+              <p>Цена<span>Форма</span></p>
+            </div>
+            <div class="filters-manufacturers">
+              <p>Производители</p>
+              <ul>
+                <li class="Bosch">Bosch</li>
+                <li>Интерскол</li>
+                <li class="Makita">Makita</li>
+                <li>Dewalt</li>
+                <li>Hitachi</li>
+              </ul>
+            </div>
+            <div class="filters-charge">
+              <p>Питание</p>
+              <ul>
+                <li>Аккумуляторные</li>
+                <li>Сетевые</li>
+              </ul>
+              <a class="button" href="#">Показать</a>
+            </div>
+          </div>
         <div class="filters-right-column">
           <section class="filters-sorting">
             <p>сортировка:</p>
@@ -243,12 +242,14 @@
               </li>
             </ul>
           </section>
+          <div>
             <ul class="pagination-list"><!--Кнопки, переход,товары списка-->
-                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-                <li class="pagination-item "><a>2</a></li>
-                <li class="pagination-item"><a href="#">3</a></li>
-                <li class="pagination-item"><a href="#">Следующая</a></li>
+              <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+              <li class="pagination-item "><a>2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+              <li class="pagination-item"><a href="#">Следующая</a></li>
             </ul>
+          </div>
         </div>
         </div>
         <div class="about">
@@ -308,7 +309,7 @@
       </div>
     </footer>
 
-    <section class="modal modal-login">
+    <section class="modal-login">
       <h2>Товар добавлен в корзину</h2>
       <p>Оформить заказ</p>
       <p>Продолжить покупки</p>
