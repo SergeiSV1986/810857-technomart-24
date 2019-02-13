@@ -8,9 +8,10 @@
     <header class="main-header">
       <div class="main-header-section-top">
         <div class="container">
-            <a class="button" href="index.html">Техномарт</a>
-            <!--Здесь будет форма-->
-            <p>Поиск</p>
+            <form class="" method="POST" action="https://echo.htmlacademy.ru">
+              <a class="button" href="index.html">Техномарт</a>
+              <input type="search" name="search" id="search" placeholder="Поиск">
+            </form>
             <ul class="user-purchases">
               <a href="bookmarks.html"><li>Закладки</li></a>
               <a href="basket.html"><li>Корзина</li></a>
@@ -117,12 +118,41 @@
               <a class="button" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
            </p>
            <p class="footer-copyright">
-             <b>Разработано —</b>
+             <b>Разработано- </b>
              <a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a>
            </p>
         </div>
       </div>
     </footer>
+
+    <section class="modal modal-login">
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="user-name">Ваше имя:</label>
+          <input class="login-name" id="user-name" type="text" name="login" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-mail">Ваш e-mail:</label>
+          <input class="login-mail" id="user-mail" type="text" name="mail" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="visually-hidden" for="user-letter">Текст письма:</label>
+          <input class="login-letter" id="user-letter" type="textarea" name="letter" placeholder="В свободной форме">
+        </p>
+        <div class="button-background">
+          <button class="button" type="submit">Отправить</button>
+        </div>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
 
   </body>
 </html>
