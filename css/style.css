@@ -1,0 +1,17 @@
+body {
+  font-family: "PT Sans", "Cuprum", sans-serif;
+  font-size: 17px;
+}
+BODY>* {
+  outline: 2px solid deeppink;
+}
+
+BODY>*>* {
+  outline: 2px dashed lime;
+  outline-offset: -2px;
+}
+
+BODY>*>*>* {
+  outline: 2px dotted dodgerblue;
+  outline-offset: -4px;
+}
