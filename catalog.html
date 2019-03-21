@@ -13,10 +13,9 @@
       <div class="main-header-top">
         <div class="container">
           <a class="logo" href="index.html">Техномарт</a>
-          <form class="" method="POST" action="https://echo.htmlacademy.ru">
-            <div class="search-field">
-              <input type="search" name="search" id="search" class="search"placeholder="Поиск">
-            </div>
+          <form class="search-form" method="POST" action="https://echo.htmlacademy.ru">
+            <input type="search" name="search" id="search" class="search"placeholder="Поиск">
+            <div class="search-field"></div>
           </form>
           <ul class="order-info">
             <li><a class="bookmarks" href="bookmarks.html">Закладки:</a></li>
@@ -26,7 +25,7 @@
         </div>
       </div>
       <div class="main-header-middle">
-        <div class="container">
+        <div class="container container-header">
           <form action="https://echo.htmlacademy.ru" method="get">
             <div class="shop-description ">
               <p>Интернет-магазин строительных материалов  и инструментов для ремонта</p>
@@ -38,9 +37,10 @@
             <div class="user-block">
               <div class="user-block-information">
                 <a class="button-user" href="#">Равшан Джамшутович</a>
+                <a class="button-user-exit" href="#"><span class="visually-hidden">Выход</span></a>
               </div>
-              <a class="user-block-button" href="my-orders.html">Мои заказы</a>
-              <a class="user-block-button" href="personal-area.html">Личный кабинет</a>
+              <a class="user-block-button button-my-orders" href="my-orders.html">Мои заказы</a>
+              <a class="user-block-button button-personal" href="personal-area.html">Личный кабинет</a>
             </div>
             <nav class="main-navigation">
               <ul class="main-navigation-list">
@@ -63,9 +63,9 @@
           <div class="container">
            <ul class="breadcrumbs-list">
              <li><a href="index.html"><img src="img/icon-home.svg" width="14" height="12" alt="Главная"><span class="visually-hidden">Главная страница</span></a></li>
-             <li><a class="list" href="catalog.html"></a>Каталог</li>
-             <li><a class="list" href="tool.html"></a>Инструмент</li>
-             <li><a class="list" href="perforators.html"></a>Перфораторы</li>
+             <li><a class="list" href="catalog.html">Каталог</a></li>
+             <li><a class="list" href="tool.html">Инструмент</a></li>
+             <li><a class="list" href="perforators.html">Перфораторы</a></li>
            </ul>
           </div>
         </section>
@@ -90,7 +90,7 @@
                   <legend>Производители:</legend>
                   <ul>
                     <li class="filter-option">
-                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="manufacturers" id="bosch" checked>
+                      <input class="visually-hidden filter-input-checkbox" type="checkbox" name="manufacturers" id="bosch" >
                       <label for="bosh">Bosch</label>
                     </li>
                     <li class="filter-option">
@@ -117,16 +117,16 @@
                   <legend>Питание:</legend>
                   <ul>
                     <li class="filter-option">
-                      <input class="visually-hidden filter-input-radio" type="checkbox" name="power" id="battery" checked>
-                      <label for="battery" >Аккумуляторные</label>
+                      <input class="visually-hidden filter-input-radio" type="radio" name="power" id="battery" checked>
+                      <label for="battery">Аккумуляторные</label>
                     </li>
                     <li class="filter-option">
-                      <input class="visually-hidden filter-input-radio" type="checkbox" name="power" id="networked" >
-                      <label for="networked" >Сетевые</label>
+                      <input class="visually-hidden filter-input-radio" type="radio" name="power" id="networked" >
+                      <label for="networked">Сетевые</label>
                     </li>
                   </ul>
                 <div class="buttons">
-                      <input type="submit" value="Показать">
+                  <input type="submit" value="Показать">
                 </div>
                 </fieldset>
               </div>
@@ -142,11 +142,15 @@
                   <li><a class="filters-sorting-type" href="#">По типу</a></li>
                   <li><a class="filters-sorting-functional" href="#">По функционалу</a></li>
                 </ul>
-                <div>
-                  <a class=" arrow arrow-first" href="#"><img src="img/icon-up-dir.svg" alt="По возростанию"></a>
+                <div class="sorting-triangles">
+                  <a class="arrow arrow-first" href="#" act>
+                    <span class="visually-hidden">По возростанию</span>
+                  </a>
                 </div>
-                <div>
-                  <a class="arrow" href="#"><img src="img/icon-down-dir.svg" alt="По убыванию"></a>
+                <div class="sorting-triangles">
+                  <a class="arrow arrow-second" href="#">
+                    <span class="visually-hidden">По убыванию</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -296,7 +300,7 @@
               <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
-              <li class="pagination-item"><a href="#">Следующая</a></li>
+              <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
             </ul>
           </div>
         </section>
@@ -325,10 +329,11 @@
           <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  +7 (812) 555-05-55
           </p>
           <ul class="footer-offer">
-            <li><a href="materials.html"></a>Материалы</li>
-            <li><a href="technique.html"></a>Техника</li>
-            <li><a href="instruments.html"></a>Инструмент</li>
-            <li><a href="special-offers.html"></a>Спецпредложения</li>
+            <li><a href="materials.html">Материалы</a></li>
+            <li><a href="technique.html">Техника</a></li>
+            <li><a href="instruments.html">Инструмент</a></li>
+            <li><a href="special-offers.html">Спецпредложения</a></li>
+            <li><a href="special-offers.html">Спецпредложения</a></li>
           </ul>
           </div>
         </div>
